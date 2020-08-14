@@ -1,6 +1,27 @@
 # SoccerCupApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+# Descripción 
+
+Proyecto **Frontend Angular** que consume los servicios de proyectos creados en **Nest**, en el momento esta incompleto. 
+A continuación se muestra una vista previa:
+
+<div align='center'>
+    <img  src='https://i.imgur.com/U7DsZ9m.png'>
+    <p>Inicio de proyecto Frontend</p>
+</div>
+
+<div align='center'>
+    <img  src='https://i.imgur.com/m3402R7.png'>
+    <p>Registro de un Torneo</p>
+</div>
+
+<div align='center'>
+    <img  src='https://i.imgur.com/gQEMJIy.png'>
+    <p>Conexión con servicio Nest.</p>
+</div>
+
+
+# Información técnica
 
 ## Development server
 
