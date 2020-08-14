@@ -1,0 +1,19 @@
+<div class="home" #home>
+    <div class="home__background" #background></div>
+    <div class="home__corner"></div>
+    <div class="home__content">
+        <h1 class="home__content-tittle" #titleStart>Tournament Test</h1>
+        <button 
+            class="home__content-button" 
+            (click)="startTournament(buttonStart, titleStart, background, home)" 
+            #buttonStart
+        >
+            get started
+        </button>
+        <app-tournament-data 
+        class="tournament-data"
+        *ngIf="isTournament"
+        (estado)="createTeams($event)"
+        ></app-tournament-data>
+    </div>
+</div>

@@ -1,0 +1,87 @@
+.home {
+    width: 100vw;
+    height: 100vh;
+    color: #fff;
+    display: grid;
+    grid-template-areas: "content";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    position: relative;
+}
+
+.home__background {
+    background-image: url("https://i.imgur.com/6i1uWg0.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.home__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    text-align: center;
+    grid-area: content;
+    z-index: 10;
+}
+
+.home__corner{
+    grid-area: corner;
+}
+
+.home__content h1{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 5em;
+    font-family: 'Oswald', sans-serif;
+    transition: all .5s ease-in;
+}
+
+.home__content-button {
+    padding: 15px 30px;
+    border: 1px solid #fff;
+    color: #fff;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, .2);
+    cursor: pointer;
+    outline: none;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    transition: all .5s ease-in;
+}
+
+.home__content-button:hover {
+    transform: scale(1.1);
+    text-shadow: 0px 0px 8px #fff;
+}
+
+.home__content-button.start, .home__content-tittle.start{
+    opacity: 0;
+}
+
+.tournament-data{
+    height: 100%;
+}
+@keyframes tournament{
+    0%{
+        background-image: url('https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80');
+        background-position: top;
+    }
+    100%{
+        background-image: url('https://media.contentapi.ea.com/content/dam/ea/fifa/fifa-21/ultimate-team/features/images/franchise-hero-large-asset-name-here-16x9-xl.jpg.adapt.crop16x9.1920w.jpg');
+    }
+
+}
+
+@media (max-width: 420px){
+    .home__content {
+        font-size: 12px;
+    }
+}
