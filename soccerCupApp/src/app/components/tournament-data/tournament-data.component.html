@@ -1,0 +1,59 @@
+<div class="tournament-form">
+    <div class="form__head">
+        <div>
+            <img src="https://img.icons8.com/ios-glyphs/90/000000/trophy.png"/>
+            <h1>Datos del Torneo</h1>
+        </div>
+        <p>Escoge los datos principales del torneo, no olvides llenar todo el formulario que esta debajo.</p>
+    </div>
+    <form autocomplete="off" (ngSubmit)="saveTournament()" [formGroup]="form">
+        <div class="inputs">
+            <label for="name">Nombre del torneo</label>
+            <input
+                class="text-in"
+                type="text" 
+                placeholder="NombreTorneo"
+                name="name"
+                formControlName="name"
+                [class.is-invalid]="validationField('name')"
+            >
+            <span *ngIf="validationField('name')">Escriba el Nombre del torneo</span>
+
+            <label for="country">País del torneo</label>
+            <input
+                class="text-in"
+                type="text" 
+                placeholder="PaísTorneo"
+                name="country"
+                formControlName="country"
+                [class.is-invalid]="validationField('country')"
+            >
+            <span *ngIf="validationField('country')">Escriba el País del torneo</span>
+
+            <label for="type">Tipo del torneo</label>
+            <input
+                class="text-in"
+                type="text" 
+                placeholder="TipoTorneo"
+                name="type"
+                formControlName="type"
+                [class.is-invalid]="validationField('type')"
+            >
+            <span *ngIf="validationField('type')">Escriba el tipo del torneo</span>
+
+            <label for="prize">Premio del torneo</label>
+            <input
+                class="text-in"
+                type="text" 
+                placeholder="TipoTorneo"
+                name="prize"
+                formControlName="prize"
+                [class.is-invalid]="validationField('prize')"
+            >
+            <span *ngIf="validationField('prize')">Escriba el tipo del torneo</span>
+        </div>
+        <div class="button">
+            <button class="button-in" type="submit">Crear Torneo</button>
+        </div>
+    </form>
+</div>

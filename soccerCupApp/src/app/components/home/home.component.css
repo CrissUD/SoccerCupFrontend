@@ -5,8 +5,13 @@
     display: grid;
     grid-template-areas: "content";
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 100vh;
     position: relative;
+}
+
+.home.tournament-data{
+    grid-template-areas: "corner content";
+    grid-template-columns: 1fr 540px;
 }
 
 .home__background {
@@ -19,6 +24,9 @@
     left: 0;
     height: 100%;
     width: 100%;
+}
+.home__background.team {
+    filter: blur(8px);
 }
 
 .home__content {
@@ -71,7 +79,7 @@
 }
 @keyframes tournament{
     0%{
-        background-image: url('https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80');
+        background-image: url('https://i.imgur.com/6i1uWg0.jpg');
         background-position: top;
     }
     100%{
