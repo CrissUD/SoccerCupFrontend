@@ -2,7 +2,7 @@ export class Team{
     id_team: string;
     name: string;
     coach: string;
-    leader: number;
+    leader: string;
     gamesPlayed: number;
     wonMatches: number;
     lostMatches: number;
@@ -10,5 +10,5 @@ export class Team{
     totalPoints: number;
     goalsScored: number;
     goalsConceded: number;
-    goalDiference: number;
+    goalDifference: number;
 }

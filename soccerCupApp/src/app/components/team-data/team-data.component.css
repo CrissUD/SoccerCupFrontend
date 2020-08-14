@@ -1,0 +1,62 @@
+.tournament-form{
+    background: #fff;
+    border-radius: 40px;
+    padding: 40px;
+}
+
+.form__head {
+    padding: 20px 40px;
+}
+
+.form__head div {
+    display: flex;
+    align-items: center;
+    background: #fff;
+}
+
+.form__head div img {
+    margin-right: 20px;
+}
+
+label {
+    margin-top: 15px;
+}
+
+h1, label {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    display: block;
+}
+
+input[type="text"] {
+    height: 35px;
+    width: 80%;
+    text-align: center;
+    display: block;
+    margin: 5px auto;
+    outline-color: #E59700;
+}
+
+input[type="text"]:focus {
+    border: 1px solid #E59700;
+}
+
+.text-in.is-invalid {
+    border: 1px solid rgb(223, 49, 49);
+}
+
+span{
+    color: rgb(223, 49, 49);
+}
+
+.button-in {
+    margin-top: 20px;
+    background: #FC5461;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    padding: 15px;
+    width: 80%;
+    cursor: pointer;
+    outline: none;
+}

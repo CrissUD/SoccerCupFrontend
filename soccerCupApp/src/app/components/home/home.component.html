@@ -15,5 +15,11 @@
         *ngIf="isTournament"
         (estado)="createTeams($event)"
         ></app-tournament-data>
+        <app-team-data
+            *ngIf="isTeam"
+            (estado)="createTeams($event)"
+        >
+
+        </app-team-data>
     </div>
 </div>
