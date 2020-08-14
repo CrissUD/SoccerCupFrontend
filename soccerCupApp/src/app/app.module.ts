@@ -7,12 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { TournamentDataComponent } from './components/tournament-data/tournament-data.component';
+import { TeamDataComponent } from './components/team-data/team-data.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    TournamentDataComponent
+    TournamentDataComponent,
+    TeamDataComponent
   ],
   imports: [
     BrowserModule,
